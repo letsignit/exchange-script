@@ -1,0 +1,17 @@
+{
+    "appId": "fbe699b86c1849f4a2e254a348bb94fc",
+    "appSecret": "R_MKO\"|&p3u7+5\\~G1jH+4dm5)?_|K8B",
+    "Exchange": {
+        "Filter":"*",
+        "UseRemote":true,
+        "Credentials": {
+            "login": "lsidev\\administrateur",
+            "password": "P@$$w0rd"
+        },
+        "FQDN": "srvexchange2013"
+    },
+    "ActiveDirectory": {
+        "Filter":"*",
+        "SearchBaseFilter":"DC=lsidev,DC=local"
+    }
+}
