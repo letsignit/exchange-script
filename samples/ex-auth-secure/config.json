@@ -12,6 +12,6 @@
     },
     "ActiveDirectory": {
         "Filter":"*",
-        "SearchBaseFilter":"DC=lsidev,DC=local"
+        "SearchBase":"DC=lsidev,DC=local"
     }
 }

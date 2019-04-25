@@ -4,14 +4,14 @@ This sample show you how to use exchange remote basic authentication
 
 ```
 "Exchange": {
-        "Filter":"*",
-        "UseRemote":true,
-        "Credentials": {
-            "login": "lsidev\\administrateur",
-            "password": "@dm1n1str4t3ur"
-        },
-        "FQDN": "srvexchange2013"
-    }
+    "Filter":"*",
+    "UseRemote":true,
+    "Credentials": {
+        "login": "lsidev\\administrateur",
+        "password": "@dm1n1str4t3ur"
+    },
+    "FQDN": "srvexchange2013"
+}
 ```
 To use basic remote authentication you have to set the property **UseRemote** to **true**, then you have to set **login** and **password** from an account that can access the Exchange Server.
 
