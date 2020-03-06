@@ -1,6 +1,6 @@
 # PowerShell Script for Exchange Signature
 
-Deploy-Signatures.ps1 is a PowerShell script for deploying Letsignit signatures in Exchange OWA.
+[Deploy-Signatures.ps1](https://github.com/letsignit/exchange-script/releases/latest/download/deploy-signatures.ps1) is a PowerShell script for deploying Letsignit signatures in Exchange OWA.
 
 You have to install at least Powershell version 4.
 See [here](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-windows-powershell?view=powershell-6)
@@ -19,6 +19,9 @@ Before using the script, you must identify yourself, you can do this by getting 
 ### Configuration File
 
 You can customize your script using a configuration file. The file is in JSON. You have to save the file in the same place that you save the script.
+
+You can download a template of configuration file [here](https://github.com/letsignit/exchange-script/releases/latest/download/config.json)
+
 
 #### appId & appSecret
 For Authentication with Letsignit API we are using an appId and an appSecret.
@@ -90,8 +93,8 @@ The SearchBase is the [Get-ADUSer](https://docs.microsoft.com/en-us/powershell/m
 At this moment you can deploy the script and run it to configure Lesignit signatures to all the users you want to.
 
 ## Deployment
-Download the script and put it on a Server that can access to your Exchange Server or it can be the Exchange Server itself. 
-Then, fill out the script with your authentication parameters and specify the filters you want to use.
+Download the script ([link](https://github.com/letsignit/exchange-script/releases/latest/download/deploy-signatures.ps1)) and put it on a Server that can access to your Exchange Server or it can be the Exchange Server itself. 
+Then, fill out the config file ([link](https://github.com/letsignit/exchange-script/releases/latest/download/config.json)) with your authentication parameters and specify the filters you want to use.
 You can run the script each time you want to update your users' signatures, you can also create a scheduled task.
 
 If you want to know more about running a Powershell script from the task scheduler see [here](https://community.spiceworks.com/how_to/17736-run-powershell-scripts-from-task-scheduler)
